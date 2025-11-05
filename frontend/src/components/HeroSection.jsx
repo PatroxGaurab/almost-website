@@ -117,17 +117,17 @@ const HeroSection = ({ scrollY }) => {
           <Button
             size="lg"
             className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white hover:from-orange-600 hover:to-yellow-600 transition-all rounded-full px-8 py-6 text-lg font-semibold shadow-lg shadow-orange-500/30"
-            onClick={() => scrollToSection('get-started')}
+            onClick={() => window.open('https://calendly.com/patrox/meeting-with-gaurab', '_blank')}
           >
-            Get Started
+            Schedule a Meeting
           </Button>
           <Button
             size="lg"
             variant="outline"
             className="border-2 border-white text-white hover:bg-white hover:text-black transition-all rounded-full px-8 py-6 text-lg font-semibold"
-            onClick={() => scrollToSection('how-it-works')}
+            onClick={() => window.open('https://bead-tricorne-c6c.notion.site/Memo-29d908edccd880789e0cc08404255e0d?source=copy_link', '_blank')}
           >
-            See How It Works
+            Read Our Memo
           </Button>
         </div>
       </div>
