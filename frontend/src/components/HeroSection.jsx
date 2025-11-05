@@ -130,22 +130,6 @@ const HeroSection = ({ scrollY }) => {
             See How It Works
           </Button>
         </div>
-
-        {/* Trust Indicators */}
-        <div className="mt-16 grid grid-cols-3 gap-8 max-w-3xl mx-auto">
-          <div>
-            <div className="text-4xl font-bold text-orange-400 mb-2">22.45 GW</div>
-            <div className="text-sm text-gray-400">Addressable Market</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-orange-400 mb-2">₹5.5</div>
-            <div className="text-sm text-gray-400">RESCO per unit</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-orange-400 mb-2">45%</div>
-            <div className="text-sm text-gray-400">C&I Power Share</div>
-          </div>
-        </div>
       </div>
 
       {/* Scroll Indicator */}
