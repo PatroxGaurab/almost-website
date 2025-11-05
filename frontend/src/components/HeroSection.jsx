@@ -3,15 +3,15 @@ import { Button } from './ui/button';
 import { TrendingDown, Zap, Clock } from 'lucide-react';
 
 const HeroSection = ({ scrollY }) => {
-  const [costSaved, setCostSaved] = useState(3.2);
+  const [costSaved, setCostSaved] = useState(5.2);
   const [energyDelivered, setEnergyDelivered] = useState(87);
   const [timeToAccess, setTimeToAccess] = useState(24);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCostSaved((prev) => {
-        const newVal = prev + (Math.random() - 0.5) * 0.1;
-        return Math.max(2.8, Math.min(3.5, newVal));
+        const newVal = prev + (Math.random() - 0.5) * 0.2;
+        return Math.max(4.5, Math.min(6.5, newVal));
       });
       setEnergyDelivered((prev) => {
         const newVal = prev + (Math.random() - 0.5) * 2;
