@@ -55,7 +55,10 @@ const FeatureSection = () => {
                   {feature.title}
                 </h2>
                 <p className="text-xl text-gray-400 leading-relaxed">{feature.description}</p>
-                <button className="group flex items-center gap-2 text-white hover:text-orange-400 transition-colors">
+                <button 
+                  className="group flex items-center gap-2 text-white hover:text-orange-400 transition-colors"
+                  onClick={() => window.open('https://bead-tricorne-c6c.notion.site/Memo-29d908edccd880789e0cc08404255e0d?source=copy_link', '_blank')}
+                >
                   <span className="text-lg font-semibold">Learn more</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
