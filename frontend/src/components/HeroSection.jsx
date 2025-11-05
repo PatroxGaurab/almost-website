@@ -4,8 +4,8 @@ import { TrendingDown, Zap, Clock } from 'lucide-react';
 
 const HeroSection = ({ scrollY }) => {
   const [costSaved, setCostSaved] = useState(5.2);
-  const [energyDelivered, setEnergyDelivered] = useState(87);
-  const [timeToAccess, setTimeToAccess] = useState(24);
+  const [energyDelivered, setEnergyDelivered] = useState(0);
+  const [timeToAccess, setTimeToAccess] = useState(45);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -13,10 +13,10 @@ const HeroSection = ({ scrollY }) => {
         const newVal = prev + (Math.random() - 0.5) * 0.2;
         return Math.max(4.5, Math.min(6.5, newVal));
       });
-      setEnergyDelivered((prev) => {
-        const newVal = prev + (Math.random() - 0.5) * 2;
-        return Math.max(85, Math.min(92, newVal));
-      });
+      // setEnergyDelivered((prev) => {
+      //   const newVal = prev + (Math.random() - 0.5) * 2;
+      //   return Math.max(85, Math.min(92, newVal));
+      // });
     }, 2000);
 
     return () => clearInterval(interval);
@@ -34,6 +34,7 @@ const HeroSection = ({ scrollY }) => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax */}
+
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -60,7 +61,7 @@ const HeroSection = ({ scrollY }) => {
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
             Access the cheapest clean energy instantly. No CAPEX. No coordination hassles. 
-            Just guaranteed low-cost power for your C&I operations.
+            Just guaranteed low-cost power.
           </p>
         </div>
 
@@ -68,7 +69,7 @@ const HeroSection = ({ scrollY }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-4xl mx-auto">
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-gray-400">Cost per unit</span>
+              <span className="text-sm text-gray-400">Average cost per unit</span>
               <TrendingDown className="w-5 h-5 text-green-400" />
             </div>
             <div className="text-3xl font-bold">
@@ -76,25 +77,28 @@ const HeroSection = ({ scrollY }) => {
               <span className="text-gray-400 text-sm ml-2">/kWh</span>
             </div>
             <div className="text-xs text-green-400 mt-2">
-              vs ₹8.5-12 grid power
+              vs ₹&nbsp;&nbsp;8.5-12 grid power
             </div>
           </div>
 
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-gray-400">Energy guarantee</span>
+              <span className="text-sm text-gray-400">Upfront cost</span>
               <Zap className="w-5 h-5 text-orange-400" />
             </div>
             <div className="text-3xl font-bold">
               {Math.round(energyDelivered)}
-              <span className="text-gray-400 text-sm ml-2">%</span>
+              <span className="text-gray-400 text-sm ml-2"></span>
             </div>
-            <div className="w-full bg-gray-700 rounded-full h-2 mt-3">
+            <div className="text-xs text-gray-500 mt-2">
+              no CAPEX involved
+            </div>            
+            {/* <div className="w-full bg-gray-700 rounded-full h-2 mt-3">
               <div
                 className="bg-gradient-to-r from-orange-400 to-yellow-500 h-2 rounded-full transition-all duration-500"
                 style={{ width: `${energyDelivered}%` }}
               ></div>
-            </div>
+            </div> */}
           </div>
 
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105">
@@ -104,7 +108,7 @@ const HeroSection = ({ scrollY }) => {
             </div>
             <div className="text-3xl font-bold">
               {timeToAccess}
-              <span className="text-gray-400 text-sm ml-1">hrs</span>
+              <span className="text-gray-400 text-sm ml-1">days</span>
             </div>
             <div className="text-xs text-gray-500 mt-2">
               vs 6-9 months traditional

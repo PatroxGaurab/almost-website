@@ -29,7 +29,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
           <img
-            src="https://customer-assets.emergentagent.com/job_436646e3-155e-4674-8b24-c3367a42203c/artifacts/o5bgt39t_1-removebg-preview.png"
+            src="https://customer-assets.emergentagent.com/job_436646e3-155e-4674-8b24-c3367a42203c/artifacts/q9p6whd0_2-removebg-preview.png"
             alt="Logo"
             className="h-8 w-auto cursor-pointer transition-transform hover:scale-105"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -37,13 +37,13 @@ const Navigation = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button
+          {/* <Button
             variant="ghost"
             className="text-white hover:text-white/80 transition-colors"
             onClick={() => window.open('https://bead-tricorne-c6c.notion.site/Memo-29d908edccd880789e0cc08404255e0d?source=copy_link', '_blank')}
           >
             Read Memo
-          </Button>
+          </Button> */}
           <Button
             className="bg-white text-black hover:bg-white/90 transition-all rounded-full px-6"
             onClick={() => window.open('https://calendly.com/patrox/meeting-with-gaurab', '_blank')}

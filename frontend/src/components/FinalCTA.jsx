@@ -45,7 +45,6 @@ const FinalCTA = () => {
           </h3>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
             Get instant access to the cheapest clean energy. No CAPEX. No coordination hassles. 
-            Just guaranteed low-cost power at ₹5.5/kWh delivered to your C&I operations.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
@@ -69,7 +68,7 @@ const FinalCTA = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
             <div className="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-6">
               <div className="text-4xl font-bold text-orange-400 mb-2">24 hours</div>
               <div className="text-sm text-gray-400">Time to Energy Access</div>
@@ -82,7 +81,7 @@ const FinalCTA = () => {
               <div className="text-4xl font-bold text-orange-400 mb-2">90%</div>
               <div className="text-sm text-gray-400">Energy Guarantee</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

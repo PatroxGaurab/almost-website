@@ -27,7 +27,7 @@ const features = [
     label: 'GUARANTEED SAVINGS',
     title: 'Fixed OPEX tariff with energy guarantee',
     description:
-      'Lock in rates at ₹5.5/kWh vs ₹8.5-12 grid power. We guarantee 90% of your energy demand is met by our network. Transparent pricing. Predictable costs.',
+      'Lock in rates at 4.5 - 6.5/kWh vs 8.5-12 grid power. Transparent pricing. Predictable costs.',
     image:
       'https://images.unsplash.com/photo-1726866492047-7f9516558c6e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxjb21tZXJjaWFsJTIwc29sYXJ8ZW58MHx8fHwxNzYyMzI1MDQxfDA&ixlib=rb-4.1.0&q=85',
     color: 'from-blue-500/20 to-cyan-500/20',

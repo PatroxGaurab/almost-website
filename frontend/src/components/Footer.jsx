@@ -19,14 +19,14 @@ const Footer = () => {
               without owning physical assets.
             </p>
             <div className="flex gap-4">
-              <a
+              {/* <a
                 href="#"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all duration-300 group"
               >
                 <Linkedin className="w-5 h-5 text-white" />
-              </a>
+              </a> */}
               <a
-                href="mailto:hello@almost.energy"
+                href="mailto:gaurab@almost.energy"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all duration-300 group"
               >
                 <Mail className="w-5 h-5 text-white" />
@@ -68,19 +68,19 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0 mt-1" />
                 <span className="text-gray-400 text-sm">
-                  Maharashtra, Karnataka,<br />West Bengal, India
+                  R135, Garia, Kolkata<br />West Bengal, India
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-orange-400 flex-shrink-0" />
                 <a href="mailto:hello@almost.energy" className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                  hello@almost.energy
+                  gaurab@almost.energy
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-orange-400 flex-shrink-0" />
                 <a href="tel:+91" className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                  Schedule a call
+                  9874975638
                 </a>
               </li>
             </ul>
@@ -93,7 +93,7 @@ const Footer = () => {
             <p className="text-gray-500 text-sm">
               © 2025 almost.energy. All rights reserved.
             </p>
-            <div className="flex gap-6">
+            {/* <div className="flex gap-6">
               <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">
                 Privacy Policy
               </a>
@@ -103,7 +103,7 @@ const Footer = () => {
               <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">
                 Compliance
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="mt-6 text-center">
             <p className="text-xs text-gray-600">

@@ -70,18 +70,16 @@ const WhyDaylight = () => {
         {/* Market Opportunity */}
         <div className="text-center">
           <h2 className="text-sm uppercase tracking-widest text-orange-400 mb-8 font-semibold">
-            Massive Market Opportunity
+            Scale Matters
           </h2>
           <h3 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
             C&I consumes 45% of India's power
             <br />
-            but has only 18.6 GW rooftop
+            but has only 3% rooftop solar
           </h3>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-            Less than 3% of potential. RESCO share rising from 30% to 40% — signaling readiness 
-            for asset-light orchestration. Capturing just 5% of unpenetrated C&I rooftop solar 
-            in Maharashtra, Karnataka, and West Bengal yields ₹1000 crore annual energy sales.
-          </p>
+          {/* <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
+            Less than 3% of potential.
+          </p> */}
           <div className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden mt-12">
             <img
               src="https://images.pexels.com/photos/9800005/pexels-photo-9800005.jpeg"
@@ -89,7 +87,7 @@ const WhyDaylight = () => {
               className="w-full h-[600px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-            <div className="absolute bottom-8 left-8 right-8">
+            {/* <div className="absolute bottom-8 left-8 right-8">
               <div className="grid grid-cols-3 gap-6 text-left">
                 <div>
                   <div className="text-3xl font-bold text-orange-400 mb-2">127.3 GW</div>
@@ -104,7 +102,7 @@ const WhyDaylight = () => {
                   <div className="text-sm text-gray-300">Addressable in 3 States</div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
