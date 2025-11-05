@@ -3,34 +3,34 @@ import { ArrowRight } from 'lucide-react';
 
 const features = [
   {
-    id: 'save',
-    label: 'save',
-    title: 'Power your home for less',
+    id: 'zero-capex',
+    label: 'ZERO CAPEX',
+    title: 'No upfront investment required',
     description:
-      'Lower your energy bills with clean solar power. Generate your own electricity and reduce dependence on the grid.',
+      'Access clean energy through our RESCO model. Pay only for the power you consume at guaranteed low rates. We coordinate everything — from financing to installation.',
     image:
-      'https://images.unsplash.com/photo-1626793369994-a904d2462888?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBzb2xhciUyMHBhbmVsc3xlbnwwfHx8fDE3NjIzMjQ0MTF8MA&ixlib=rb-4.1.0&q=85',
+      'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwc29sYXJ8ZW58MHx8fHwxNzYyMzI1MDQxfDA&ixlib=rb-4.1.0&q=85',
+    color: 'from-green-500/20 to-emerald-500/20',
+  },
+  {
+    id: 'instant-access',
+    label: 'INSTANT ACCESS',
+    title: 'Real-time clean energy subscription',
+    description:
+      'Traditional solar projects take 6-9 months and involve 5+ counterparties. With our AI-orchestrated marketplace, get clean energy access in days, not months.',
+    image:
+      'https://images.unsplash.com/photo-1713544123580-12096cc9eb12?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxjb21tZXJjaWFsJTIwc29sYXJ8ZW58MHx8fHwxNzYyMzI1MDQxfDA&ixlib=rb-4.1.0&q=85',
     color: 'from-orange-500/20 to-yellow-500/20',
   },
   {
-    id: 'protect',
-    label: 'protect',
-    title: 'Keep the lights on with battery backup',
+    id: 'guaranteed-savings',
+    label: 'GUARANTEED SAVINGS',
+    title: 'Fixed OPEX tariff with energy guarantee',
     description:
-      'Stay powered during outages with our oversized battery backup system. Never worry about blackouts again.',
+      'Lock in rates at ₹5.5/kWh vs ₹8.5-12 grid power. We guarantee 90% of your energy demand is met by our network. Transparent pricing. Predictable costs.',
     image:
-      'https://images.unsplash.com/photo-1706166987869-5482b5ad8dd5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxiYXR0ZXJ5JTIwZW5lcmd5JTIwc3RvcmFnZXxlbnwwfHx8fDE3NjIzMjQ0MzZ8MA&ixlib=rb-4.1.0&q=85',
+      'https://images.unsplash.com/photo-1726866492047-7f9516558c6e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxjb21tZXJjaWFsJTIwc29sYXJ8ZW58MHx8fHwxNzYyMzI1MDQxfDA&ixlib=rb-4.1.0&q=85',
     color: 'from-blue-500/20 to-cyan-500/20',
-  },
-  {
-    id: 'earn',
-    label: 'Earn',
-    title: 'Get rewarded for using Daylight',
-    description:
-      'Earn Sun Points for being part of the network. Redeem for gift cards, merch, or to pay your subscription.',
-    image:
-      'https://images.unsplash.com/photo-1715605569717-494ac7c5656a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxiYXR0ZXJ5JTIwZW5lcmd5JTIwc3RvcmFnZXxlbnwwfHx8fDE3NjIzMjQ0MzZ8MA&ixlib=rb-4.1.0&q=85',
-    color: 'from-purple-500/20 to-pink-500/20',
   },
 ];
 
@@ -48,13 +48,13 @@ const FeatureSection = () => {
           >
             <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
               <div className="space-y-6">
-                <span className="inline-block text-sm uppercase tracking-widest text-orange-400">
+                <span className="inline-block text-sm uppercase tracking-widest text-orange-400 font-semibold">
                   {feature.label}
                 </span>
                 <h2 className="text-5xl md:text-6xl font-bold leading-tight">
                   {feature.title}
                 </h2>
-                <p className="text-xl text-gray-400">{feature.description}</p>
+                <p className="text-xl text-gray-400 leading-relaxed">{feature.description}</p>
                 <button className="group flex items-center gap-2 text-white hover:text-orange-400 transition-colors">
                   <span className="text-lg font-semibold">Learn more</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -68,7 +68,7 @@ const FeatureSection = () => {
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${feature.color} blur-3xl opacity-50 group-hover:opacity-70 transition-opacity`}
               ></div>
-              <div className="relative overflow-hidden rounded-3xl aspect-[4/5]">
+              <div className="relative overflow-hidden rounded-3xl aspect-[4/3]">
                 <img
                   src={feature.image}
                   alt={feature.title}

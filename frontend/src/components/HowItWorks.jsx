@@ -1,31 +1,31 @@
 import React from 'react';
 import { Button } from './ui/button';
-import { Smartphone, Home, Zap } from 'lucide-react';
+import { Network, Cpu, LineChart } from 'lucide-react';
 
 const steps = [
   {
-    step: 'step 1',
-    title: 'Join the network',
-    subtitle: 'Two ways to connect',
+    step: 'Step 1',
+    title: 'AI-Powered Demand Origination',
+    subtitle: 'Instant site evaluation & underwriting',
     description:
-      'Subscribe to get solar + battery backup with no upfront costs. Daylight owns the system, you pay for the power it produces. Or buy your panels outright and we\'ll include a battery at no extra cost to you.',
-    icon: Smartphone,
+      'Our AI agents evaluate your facility, energy consumption patterns, and rooftop potential in real-time. We underwrite your site and structure the optimal PPA for your business needs.',
+    icon: Cpu,
   },
   {
     step: 'Step 2',
-    title: 'Power up',
-    subtitle: 'Your house acts like a mini power plant',
+    title: 'Ecosystem Coordination',
+    subtitle: 'We orchestrate RESCOs, EPCs & investors',
     description:
-      'With solar and battery installed, your house produces clean energy and stores surplus.',
-    icon: Home,
+      'Your business doesn\'t deal with multiple vendors. We coordinate with our curated network of EPCs for installation, investors for financing, and RESCOs for operations — all in the background.',
+    icon: Network,
   },
   {
     step: 'Step 3',
-    title: 'Your energy works for you',
-    subtitle: 'Daylight trades energy you don\'t use',
+    title: 'Performance & Optimization',
+    subtitle: 'Guaranteed delivery with AI monitoring',
     description:
-      'Excess energy is traded with the grid through your battery. You stay powered during outages and earn rewards just by being part of the network.',
-    icon: Zap,
+      'We monitor energy generation 24/7, manage cashflows, ensure compliance, and optimize your energy costs. You get guaranteed clean energy at fixed OPEX tariff with no operational hassles.',
+    icon: LineChart,
   },
 ];
 
@@ -50,33 +50,27 @@ const HowItWorks = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <div className="inline-block mb-8">
+          <div className="space-y-4">
+            <p className="text-orange-400 text-sm uppercase tracking-widest">Our Model</p>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+              AI-Orchestrated Clean Energy
+            </h2>
+            <h3 className="text-3xl md:text-4xl font-bold mt-8 mb-6 leading-tight max-w-4xl mx-auto">
+              Where AI replaces bureaucracy to deliver the cheapest clean energy
+            </h3>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+              We operate as a layer above RESCOs — a virtual utility that coordinates the entire ecosystem. 
+              You get fixed OPEX tariff and energy guarantee. We handle demand origination, site underwriting, 
+              PPA structuring, performance monitoring, and cashflow management.
+            </p>
+          </div>
+          <div className="inline-block mb-8 mt-12">
             <img
-              src="https://images.pexels.com/photos/532571/pexels-photo-532571.jpeg"
-              alt="Solar Installation"
-              className="w-full max-w-2xl rounded-3xl shadow-2xl"
+              src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZmFjdG9yeXxlbnwwfHx8fDE3NjIzMjUwNTF8MA&ixlib=rb-4.1.0&q=85"
+              alt="Industrial Solar Installation"
+              className="w-full max-w-4xl rounded-3xl shadow-2xl"
             />
           </div>
-          <div className="space-y-4">
-            <p className="text-orange-400 text-sm uppercase tracking-widest">How</p>
-            <h2 className="text-6xl md:text-7xl font-bold">
-              Daylight
-            </h2>
-            <p className="text-orange-400 text-sm uppercase tracking-widest">Works</p>
-          </div>
-          <h3 className="text-3xl md:text-4xl font-bold mt-8 mb-6 leading-tight max-w-4xl mx-auto">
-            Two ways to power your home. One powerful network.
-          </h3>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
-            Choose a monthly energy subscription or purchase your system outright. Both options include an oversized backup battery from Daylight at no additional cost. You create enough power for you, and share surplus with the grid.
-          </p>
-          <Button
-            size="lg"
-            className="bg-white text-black hover:bg-gray-100 transition-all rounded-full px-8 py-6 text-lg font-semibold"
-            onClick={() => scrollToSection('qualify')}
-          >
-            See if your house qualifies
-          </Button>
         </div>
 
         {/* Steps */}
@@ -90,7 +84,7 @@ const HowItWorks = () => {
               >
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                   <div className="space-y-6">
-                    <span className="inline-block text-sm uppercase tracking-widest text-orange-400">
+                    <span className="inline-block text-sm uppercase tracking-widest text-orange-400 font-semibold">
                       {item.step}
                     </span>
                     <h3 className="text-4xl md:text-5xl font-bold">{item.title}</h3>
@@ -121,11 +115,10 @@ const HowItWorks = () => {
         <div className="text-center mt-24">
           <Button
             size="lg"
-            variant="outline"
-            className="border-2 border-white text-white hover:bg-white hover:text-black transition-all rounded-full px-8 py-6 text-lg font-semibold"
-            onClick={() => scrollToSection('estimate')}
+            className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white hover:from-orange-600 hover:to-yellow-600 transition-all rounded-full px-8 py-6 text-lg font-semibold shadow-lg shadow-orange-500/30"
+            onClick={() => scrollToSection('get-started')}
           >
-            Get your estimate
+            Start Saving Today
           </Button>
         </div>
       </div>
