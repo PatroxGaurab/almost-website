@@ -66,8 +66,8 @@ const HowItWorks = () => {
           </div>
           <div className="inline-block mb-8 mt-12">
             <img
-              src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZmFjdG9yeXxlbnwwfHx8fDE3NjIzMjUwNTF8MA&ixlib=rb-4.1.0&q=85"
-              alt="Industrial Solar Installation"
+              src="https://images.unsplash.com/photo-1485740112426-0c2549fa8c86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NjIzMjU1NzB8MA&ixlib=rb-4.1.0&q=85"
+              alt="AI-Orchestrated Energy Infrastructure"
               className="w-full max-w-4xl rounded-3xl shadow-2xl"
             />
           </div>
