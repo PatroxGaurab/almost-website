@@ -40,15 +40,15 @@ const Navigation = () => {
           <Button
             variant="ghost"
             className="text-white hover:text-white/80 transition-colors"
-            onClick={() => scrollToSection('qualify')}
+            onClick={() => window.open('https://bead-tricorne-c6c.notion.site/Memo-29d908edccd880789e0cc08404255e0d?source=copy_link', '_blank')}
           >
-            See if you qualify
+            Read Memo
           </Button>
           <Button
             className="bg-white text-black hover:bg-white/90 transition-all rounded-full px-6"
-            onClick={() => scrollToSection('estimate')}
+            onClick={() => window.open('https://calendly.com/patrox/meeting-with-gaurab', '_blank')}
           >
-            Get your estimate
+            Schedule Meeting
           </Button>
         </div>
       </div>
