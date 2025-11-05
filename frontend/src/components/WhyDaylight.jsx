@@ -20,8 +20,8 @@ const WhyDaylight = () => {
           </h3>
           <div className="relative max-w-4xl mx-auto rounded-3xl overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwZmFjdG9yeXxlbnwwfHx8fDE3NjIzMjUwNTF8MA&ixlib=rb-4.1.0&q=85"
-              alt="Industrial Complex"
+              src="https://images.unsplash.com/photo-1627645835237-0743e52b991f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NjIzMjU1NzB8MA&ixlib=rb-4.1.0&q=85"
+              alt="Futuristic Energy Technology"
               className="w-full h-[500px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
