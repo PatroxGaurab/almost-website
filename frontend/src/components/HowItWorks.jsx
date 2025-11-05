@@ -116,9 +116,9 @@ const HowItWorks = () => {
           <Button
             size="lg"
             className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white hover:from-orange-600 hover:to-yellow-600 transition-all rounded-full px-8 py-6 text-lg font-semibold shadow-lg shadow-orange-500/30"
-            onClick={() => scrollToSection('get-started')}
+            onClick={() => window.open('https://calendly.com/patrox/meeting-with-gaurab', '_blank')}
           >
-            Start Saving Today
+            Schedule a Meeting
           </Button>
         </div>
       </div>
